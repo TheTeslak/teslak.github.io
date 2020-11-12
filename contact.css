@@ -1,0 +1,49 @@
+.centerer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+	align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copy-button {
+    position: relative;
+    display: flex;
+    text-align: center;
+	align-items: center;
+    justify-content: center;
+    
+    margin: 24px 12px 0 12px;
+    padding: 0 18px 0 18px;
+    height: 48px;
+    border-radius: 24px;
+    background: #FFFFFF;
+
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #1E1E1E;
+
+    opacity: 0;
+    animation: blockShowUp 0.4s ease-out 0.4s forwards;
+}
+
+.copy-button:hover {
+    background: #e1e1e1;
+}
+
+.copy-button:active {
+    color: #0033CC
+}
+
+@media only screen and (max-width: 767px) {
+    .teslak {
+        margin-top: calc(50vh - 80px);
+    }
+}

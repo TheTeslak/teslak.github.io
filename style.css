@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap');
+@import url("animations.css");
+
+html { width: 100%; height: 100%; margin: 0; padding: 0; }
+body { background: #1E1E1E; }
+
+.teslak {
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: calc(50vh - 119px/2 - 71.5px);
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 119px;
+    color: #FFFFFF;
+    opacity: 0;
+    animation: blockShowUp 0.4s ease-out 0.2s forwards;
+}
+
+.infos {
+    position: relative;
+    margin: 5px 0 0 0;
+    align-items: center;
+    text-align: center;
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: blockShowUp 0.4s ease-out 0.2s forwards;
+}
+
+.info {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 6px 0 6px;
+    color: #FFFFFF;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+    margin-top: 24px;
+    opacity: 0;
+    animation: blockShowUp 0.4s ease-out 0.8s forwards;
+}
+
+.link {
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    margin: 0 12px 0 12px;
+    transition: max-width ease-in-out 0.3s;
+    height: 48px;
+    max-width: 48px;
+    text-decoration: none;
+}
+
+.link img {
+ width: 48px;
+ height: 48px;
+}
+
+.link h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 18px;
+    overflow: hidden;
+    color: #1E1E1E;
+}
+
+.link h3:active {
+	color: #0033CC;
+}
+
+.link:hover {
+    max-width: 180px;
+}
+
+.studio {
+    margin-top: 24px;
+    text-align: center;
+	/* text-decoration: underline; */
+    display: block;
+    opacity: 0;
+    animation: blockShowUp 0.3s ease-out 0.5s forwards;
+}
+
+.studio a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 6px;
+    transition: padding-left ease-in-out 0.2s;
+}
+
+.studio a:hover {
+    text-decoration: underline;
+    padding-left: 12px;
+}
+
+.studio .arrow {
+    display: inline;
+    padding-left: 8px;
+    transition: ease-in-out 0.2s;
+}
+
+.studio a:hover .arrow {
+    padding-left: 14px;
+}
+
+.flex-break {
+    width: 0;
+}
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display:none;
+}
+
+@media only screen and (max-width: 767px) {
+    .teslak {
+        margin-top: calc(50vh - 200px);
+        font-size: 50px;
+        line-height: 66px;
+    }
+
+    .links {
+        margin-top: 8px;
+    }
+
+    .link {
+        max-width: 180px;
+        margin-top: 16px;
+    }
+
+    .flex-break {
+        width: 100%;
+    }
+}
