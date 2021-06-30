@@ -3,19 +3,19 @@
 @import url("animations.css");
 
 html { width: 100%; height: 100%; margin: 0; padding: 0; }
-body { background: #0F141E; }
-A {
+body { background: #0F141E !important; }
+/*A {
     color: #ffffff;
    }
    A:visited {
-    color: #ffffff;
-   }
+    color: #ffffff; 
+   } 
    A:active {
     color: #ACB1C8;
    }
    A:hover {
     color: #CBCFE2;
-}
+}*/
 
 .teslak {
     align-items: center;
