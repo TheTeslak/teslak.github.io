@@ -106,11 +106,16 @@ a {
     color: #0C0C3D;
 }
 
+a img {
+    transition: all 0.3s ease-out;
+}
+
 a:hover {
     color: #1045FF;
 }
 a:hover img {
     content: url("arrow.svg#hover");
+    right: 24px;
 }
 
 a:active {
@@ -137,6 +142,7 @@ a:active img {
     color: inherit;
     content: url("arrow.svg#default");
 }
+
 
 @media only screen and (max-width: 767px) {
     body {
